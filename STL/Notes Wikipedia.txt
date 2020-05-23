@@ -1,0 +1,31 @@
+A STL foi criada primeiramente como uma biblioteca de algoritmos genéricos e estruturas de dados, com quatro conceitos presentes: 
+1 - programação genérica
+2 - abstração sem perda de eficiência
+3 - o modelo computacional de Von Neumann
+4 - valores semânticos.
+
+
+Containers:
+
+-Container é um delimitador abstrato, ou seja, um objeto que contém outros objetos que podem ser incluídos ou removidos dinamicamente 
+(durante o tempo de execução), diferentemente do que ocorre em uma composição onde este relacionamento é fixado durante o tempo de compilação.
+-Containers sequenciais (como vector, string e deque)
+-Containers associativos (como set, multiset, map e multimap).
+
+
+Iteradores:
+
+-Um iterador se refere tanto ao objeto que permite ao programador percorrer um container, (uma coleção de elementos) particularmente listas,
+quanto ao padrão de projetos Iterator, no qual um iterador é usado para percorrer um container e acessar seus elementos. 
+O padrão Iterator desacopla os algoritmos dos recipientes, porém em alguns casos, os algoritmos são necessariamente específicos dos containers e, portanto,
+não podem ser desacoplados.
+
+-Iteradores são os maiores auxiliadores para a programação genérica em STL. Por exemplo, um algoritmo de inversão de uma sequência pode ser implementado
+utilizando iteradores bidirecionais, e a mesma implementação pode ser usada em listas e vetores. Containers criados pelo desenvolvedor
+podem usufruir de todos os algoritmos da STL desde que implementem pelo menos um dos iteradores descritos acima.
+
+
+
+
+Referências:
+-https://pt.wikipedia.org/wiki/Standard_Template_Library
